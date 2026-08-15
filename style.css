@@ -157,7 +157,7 @@ button {
    - desktop height is tuned to finish near the Buy Now button */
 .main-image-wrap {
   background: #eee9e2;
-  height: 750 px;
+  height: 800 px;
   min-height: 0;
   overflow: hidden;
   position: relative;
