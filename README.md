@@ -1,1 +1,0 @@
-# responsive-ecommerce-product-page
