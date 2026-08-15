@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Interactive responsive ecommerce product page built with HTML, CSS, and vanilla JavaScript.">
+  <title>Maison Elise — Satin Midi Dress</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <button class="menu-toggle icon-btn" type="button" aria-label="Open navigation" aria-expanded="false" data-menu-toggle>☰</button>
+
+    <a class="brand" href="#top">MAISON ELISE</a>
+
+    <nav class="site-nav" data-nav>
+      <a href="#new">New In</a>
+      <a href="#dresses">Dresses</a>
+      <a href="#occasion">Occasion</a>
+      <a href="#journal">Journal</a>
+    </nav>
+
+    <div class="header-actions">
+      <button type="button" data-search-open>Search</button>
+      <button class="wishlist-header icon-btn" type="button" aria-label="Wishlist" data-wishlist>♡</button>
+      <button class="bag-button" type="button" data-cart-open>Bag <span data-bag-count>0</span></button>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="announcement" id="new" aria-label="Store benefits">
+      <span>Complimentary shipping over $150 CAD</span>
+      <span>30-day returns</span>
+      <span>Secure checkout</span>
+    </section>
+
+    <section class="product-shell" aria-labelledby="product-title">
+      <div class="gallery">
+        <div class="thumbnail-list" aria-label="Product gallery thumbnails">
+          <button class="thumbnail is-active" type="button" data-gallery-index="0">
+            <img src="assets/champagne-main.png" alt="">
+          </button>
+          <button class="thumbnail" type="button" data-gallery-index="1">
+            <img src="assets/champagne-side.png" alt="">
+          </button>
+          <button class="thumbnail" type="button" data-gallery-index="2">
+            <img src="assets/champagne-detail.png" alt="">
+          </button>
+        </div>
+
+        <div class="main-image-wrap">
+          <span class="product-badge">NEW</span>
+          <button class="image-wishlist" type="button" aria-label="Add to wishlist" data-wishlist>♡</button>
+          <img id="main-product-image" src="assets/champagne-main.png" alt="Champagne satin midi dress, front view">
+          <button class="zoom-button" type="button" data-zoom-open>View larger</button>
+        </div>
+      </div>
+
+      <div class="product-info">
+        <p class="eyebrow">THE SIGNATURE EDIT</p>
+        <h1 id="product-title">Satin Cowl-Neck Midi Dress</h1>
+
+        <div class="rating-row">
+          <span aria-label="5 out of 5 stars">★★★★★</span>
+          <button class="review-link" type="button" data-scroll-reviews>128 reviews</button>
+        </div>
+
+        <p class="price">$168 CAD</p>
+        <p class="product-copy">
+          A softly draped midi dress with a defined waist, fluid skirt, and delicate straps.
+          Designed for dinners, weddings, and elevated evenings.
+        </p>
+
+        <div class="option-group">
+          <div class="option-heading">
+            <span>Colour</span>
+            <strong data-color-label>Champagne</strong>
+          </div>
+
+          <div class="swatches" role="group" aria-label="Choose colour">
+            <button class="swatch is-selected" type="button" data-color="Champagne" style="--swatch:#d9c4aa" aria-label="Champagne"></button>
+            <button class="swatch" type="button" data-color="Black" style="--swatch:#171717" aria-label="Black"></button>
+            <button class="swatch" type="button" data-color="Sage" style="--swatch:#a9b29e" aria-label="Sage"></button>
+          </div>
+        </div>
+
+        <div class="option-group">
+          <div class="option-heading">
+            <span>Size</span>
+            <button class="text-link" type="button" data-size-guide-open>Size guide</button>
+          </div>
+
+          <div class="sizes" role="group" aria-label="Choose size">
+            <button type="button" data-size="XS">XS</button>
+            <button type="button" data-size="S">S</button>
+            <button class="is-selected" type="button" data-size="M">M</button>
+            <button type="button" data-size="L">L</button>
+            <button type="button" data-size="XL">XL</button>
+          </div>
+
+          <p class="selection-note">Selected: <strong data-selected-variant>Champagne / M</strong></p>
+        </div>
+
+        <div class="purchase-row">
+          <div class="quantity" aria-label="Quantity selector">
+            <button type="button" data-qty-minus aria-label="Decrease quantity">−</button>
+            <span data-qty>1</span>
+            <button type="button" data-qty-plus aria-label="Increase quantity">+</button>
+          </div>
+
+          <button class="add-btn" type="button" data-add-to-bag>Add to Bag — $168 CAD</button>
+        </div>
+
+        <button class="buy-now" type="button" data-buy-now>Buy Now</button>
+
+        <div class="benefits">
+          <div><span>◇</span><p><strong>Free shipping</strong><br>On orders over $150 CAD</p></div>
+          <div><span>↺</span><p><strong>Easy returns</strong><br>30-day return window</p></div>
+          <div><span>✦</span><p><strong>Premium finish</strong><br>Soft satin with elegant drape</p></div>
+        </div>
+
+        <div class="accordions">
+          <article class="accordion is-open">
+            <button type="button" aria-expanded="true"><span>Product Details</span><span>−</span></button>
+            <div class="accordion-panel">
+              <ul>
+                <li>Soft cowl neckline with delicate straps</li>
+                <li>Defined waist and figure-skimming cut</li>
+                <li>Midi-length satin skirt</li>
+                <li>Clean back finish</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="accordion">
+            <button type="button" aria-expanded="false"><span>Fabric & Care</span><span>+</span></button>
+            <div class="accordion-panel" hidden>
+              <p>Soft satin finish. Hand wash cold or dry clean. Hang to dry. Cool iron on reverse.</p>
+            </div>
+          </article>
+
+          <article class="accordion">
+            <button type="button" aria-expanded="false"><span>Delivery & Returns</span><span>+</span></button>
+            <div class="accordion-panel" hidden>
+              <p>Standard delivery: 3–6 business days. Express delivery available. Returns accepted within 30 days.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="editorial-strip" id="journal">
+      <div>
+        <p class="eyebrow">WHY IT WORKS</p>
+        <h2>Designed to move beautifully.</h2>
+        <p>
+          A smooth satin finish and softly draped shape create a refined evening look,
+          while the clean neckline keeps the styling modern and versatile.
+        </p>
+      </div>
+
+      <div class="fabric-card">
+        <span>FABRIC FOCUS</span>
+        <strong>Soft Satin</strong>
+        <p>Fluid drape · Light sheen · Smooth hand feel</p>
+      </div>
+    </section>
+
+    <section class="occasion-section" id="occasion">
+      <p class="eyebrow">STYLE IT FOR</p>
+
+      <div class="occasion-grid">
+        <article><span>01</span><h3>Wedding Guest</h3><p>Pair with metallic heels and a structured clutch.</p></article>
+        <article><span>02</span><h3>Date Night</h3><p>Add delicate jewellery and an understated evening bag.</p></article>
+        <article><span>03</span><h3>Evening Event</h3><p>Finish with sleek heels and statement earrings.</p></article>
+      </div>
+    </section>
+
+    <section class="related" id="dresses">
+      <div class="section-heading">
+        <p class="eyebrow">YOU MAY ALSO LIKE</p>
+        <h2>Complete the edit</h2>
+      </div>
+
+      <div class="product-grid">
+        <article class="mini-product" data-mini-product="Asymmetric Midi Dress" data-mini-price="154" data-mini-image="assets/asymmetric-midi.jpg">
+          <button class="mini-image-button" type="button" data-quick-view>
+            <img src="assets/asymmetric-midi.jpg" alt="Asymmetric midi dress">
+          </button>
+          <h3>Asymmetric Midi Dress</h3>
+          <p>$154 CAD</p>
+          <div class="mini-actions">
+            <button class="quick-view-link" type="button" data-quick-view>Quick view</button>
+            <button class="quick-add" type="button">Quick add</button>
+          </div>
+        </article>
+
+        <article class="mini-product" data-mini-product="Draped Evening Dress" data-mini-price="182" data-mini-image="assets/draped-evening.jpg">
+          <button class="mini-image-button" type="button" data-quick-view>
+            <img src="assets/draped-evening.jpg" alt="Draped evening dress">
+          </button>
+          <h3>Draped Evening Dress</h3>
+          <p>$182 CAD</p>
+          <div class="mini-actions">
+            <button class="quick-view-link" type="button" data-quick-view>Quick view</button>
+            <button class="quick-add" type="button">Quick add</button>
+          </div>
+        </article>
+
+        <article class="mini-product" data-mini-product="Soft Tailored Midi" data-mini-price="160" data-mini-image="assets/soft-tailored-midi.jpg">
+          <button class="mini-image-button" type="button" data-quick-view>
+            <img src="assets/soft-tailored-midi.jpg" alt="Soft tailored midi dress">
+          </button>
+          <h3>Soft Tailored Midi</h3>
+          <p>$160 CAD</p>
+          <div class="mini-actions">
+            <button class="quick-view-link" type="button" data-quick-view>Quick view</button>
+            <button class="quick-add" type="button">Quick add</button>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="reviews" id="reviews">
+      <div class="review-summary">
+        <p class="eyebrow">CUSTOMER REVIEWS</p>
+        <h2>4.9 / 5</h2>
+        <p>Based on 128 verified reviews</p>
+      </div>
+
+      <div class="review-cards">
+        <article>
+          <div>★★★★★</div>
+          <h3>Beautiful fit</h3>
+          <p>“The fabric drapes beautifully and the fit feels elegant without being restrictive.”</p>
+          <span>— Maya R.</span>
+        </article>
+
+        <article>
+          <div>★★★★★</div>
+          <h3>Elegant and comfortable</h3>
+          <p>“Wore it to a wedding and received so many compliments.”</p>
+          <span>— Claire T.</span>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <div class="overlay" data-overlay hidden></div>
+
+  <aside class="cart-drawer" data-cart-drawer aria-hidden="true" aria-label="Shopping bag">
+    <div class="drawer-header">
+      <h2>Your Bag</h2>
+      <button class="icon-btn drawer-close" type="button" data-cart-close aria-label="Close bag">×</button>
+    </div>
+
+    <div class="cart-content" data-cart-content></div>
+
+    <div class="cart-footer" data-cart-footer hidden>
+      <div class="subtotal-row"><span>Subtotal</span><strong data-cart-subtotal>$0 CAD</strong></div>
+      <p>Taxes and shipping calculated at checkout.</p>
+      <button class="checkout-btn" type="button" data-checkout>Demo Checkout</button>
+    </div>
+  </aside>
+
+  <section class="search-panel" data-search-panel aria-hidden="true">
+    <div class="search-inner">
+      <div class="search-top">
+        <h2>Search</h2>
+        <button class="icon-btn" type="button" data-search-close aria-label="Close search">×</button>
+      </div>
+
+      <input type="search" placeholder="Search dresses, satin, wedding..." data-search-input>
+      <div class="search-results" data-search-results>
+        <p class="muted">Try “satin”, “midi”, or “wedding”.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="modal" data-size-guide aria-hidden="true">
+    <div class="modal-card">
+      <button class="modal-close icon-btn" type="button" data-size-guide-close aria-label="Close size guide">×</button>
+      <p class="eyebrow">SIZE GUIDE</p>
+      <h2>Find your best fit</h2>
+
+      <div class="size-table">
+        <div><strong>Size</strong><strong>Bust</strong><strong>Waist</strong><strong>Hips</strong></div>
+        <div><span>XS</span><span>32–33"</span><span>24–25"</span><span>35–36"</span></div>
+        <div><span>S</span><span>34–35"</span><span>26–27"</span><span>37–38"</span></div>
+        <div><span>M</span><span>36–37"</span><span>28–29"</span><span>39–40"</span></div>
+        <div><span>L</span><span>38–40"</span><span>30–32"</span><span>41–43"</span></div>
+        <div><span>XL</span><span>41–43"</span><span>33–35"</span><span>44–46"</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="modal" data-zoom-modal aria-hidden="true">
+    <div class="zoom-card">
+      <button class="modal-close icon-btn" type="button" data-zoom-close aria-label="Close enlarged image">×</button>
+      <img src="assets/champagne-main.png" alt="Enlarged product view" data-zoom-image>
+    </div>
+  </section>
+
+  <section class="modal" data-quick-view-modal aria-hidden="true">
+    <div class="quick-view-card">
+      <button class="modal-close icon-btn" type="button" data-quick-view-close aria-label="Close quick view">×</button>
+      <img src="" alt="" data-quick-view-image>
+      <div>
+        <p class="eyebrow">QUICK VIEW</p>
+        <h2 data-quick-view-title></h2>
+        <p class="quick-view-price" data-quick-view-price></p>
+        <p class="muted">A polished fashion piece selected to complete the edit.</p>
+        <button class="add-btn" type="button" data-quick-view-add>Add to Bag</button>
+      </div>
+    </div>
+  </section>
+
+  <div class="toast" role="status" aria-live="polite" data-toast>Added to your bag.</div>
+
+  <script src="script.js"></script>
+</body>
+</html>
